@@ -1,0 +1,8 @@
+<% if !@restaurants.blank? %>
+  <% for item in @restaurants %>
+  <p><%= item.name %></p>
+  <p><%= item.id %></p>
+  <% end %>
+<% else %>
+  <p>No Restaurants found</p>
+<% end %>
